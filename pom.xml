@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  
+  <modelVersion>4.0.0</modelVersion>
+   <groupId>testSocial.ronny</groupId>
+  <artifactId>testSocial</artifactId>
+  <version>1.0</version>
+  <build>
+  	<defaultGoal>compile</defaultGoal>
+  	<finalName>testSocial</finalName>
+  	<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          
+          <source>1.7</source>
+           <target>1.7</target>
+          
+           <server>localhost</server> 
+           
+           
+
+        
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>tomcat-maven-plugin</artifactId>
+        <configuration>
+        	<server>localTomcat</server>
+        </configuration>
+       
+       
+	</plugin>
+	
+      
+    </plugins>
+  </build>
+  
+  
+  
+  <packaging>jar</packaging>
+  <name>pdf</name>
+  <url>http://www.springinaction.com</url>
+  
+ <dependencies>
+    <!-- For some reason, Xerces is needed for the example
+         to run (using the Java task in antrun) on MacOS X.
+         Not clear as to why...and I've not taken the time
+         to figure it out. -->
+		 
+		 
+
+		 
+  
+ <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
+<!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-oauth2 -->
+<!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-httpclient-apache -->
+<!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-core -->
+<!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-core -->
+<dependency>
+    <groupId>com.github.scribejava</groupId>
+    <artifactId>scribejava-core</artifactId>
+    <version>4.2.0</version>
+</dependency>
+
+<dependency>
+    <groupId>com.github.scribejava</groupId>
+    <artifactId>scribejava-apis</artifactId>
+    <version>5.0.0</version>
+</dependency>
+<dependency>
+    <groupId>com.github.scribejava</groupId>
+    <artifactId>scribejava-httpclient-apache</artifactId>
+    <version>5.0.0</version>
+</dependency>	
+<!-- https://mvnrepository.com/artifact/org.json/json -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20171018</version>
+</dependency>	
+</dependencies>
+
+</project>
